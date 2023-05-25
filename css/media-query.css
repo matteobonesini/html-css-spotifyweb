@@ -34,7 +34,24 @@
 @media screen and (max-width: 600px) {
     main .sidebar {
         width: var(--sidebar-width-small);
+        padding: .625rem;
     }
+    main .sidebar .logo {
+        display: none;
+    }
+    main .sidebar .logo-small {
+        display: block;
+    }
+    main .sidebar .menu {
+        margin: 0.625rem 0;
+    }
+    main .sidebar .menu > h4 {
+        display: none;
+    }
+    main .sidebar .sidebar-center {
+        display: none;
+    }
+
     main .main-section {
         width: calc(100% - var(--sidebar-width-small));
         margin-left: var(--sidebar-width-small);

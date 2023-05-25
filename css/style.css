@@ -11,7 +11,64 @@ main .sidebar {
     bottom: var(--footer-height);
     background-color: black;
     width: var(--sidebar-width);
+    padding-left: 1.25rem;
 }
+main .sidebar .logo {
+    margin: 1.5625rem 5.5rem 1.5625rem 0;
+}
+main .sidebar .logo-small {
+    display: none;
+}
+main .sidebar .menu h4 {
+    line-height: 2.5rem;
+}
+main .sidebar .menu h4 {
+    display: inline-block;
+    font-size: 0.9em;
+}
+main .sidebar .home {
+    color: white;
+    position: relative;
+}
+main .sidebar .home::before {
+    content: "";
+    display: block;
+    height: 40px;
+    width: 4px;
+    background-color: var(--green-color);
+    position: absolute;
+    left: -1.25rem;
+}
+main .sidebar .search,
+main .sidebar .library {
+    color: var(--grey-text);
+}
+main .sidebar .menu > img {
+    width: 1.875rem;
+    vertical-align: middle;
+}
+main .sidebar .sidebar-center > h5 {
+    font-size: 1.2em;
+    color: white;
+    text-transform: uppercase;
+    margin: 1.25rem 0 .625rem;
+}
+main .sidebar .add-playlist > * {
+    line-height: 3.125rem;
+    vertical-align: middle;
+}
+main .sidebar .add-playlist h5 {
+    font-size: 1.2em;
+    display: inline-block;
+    color: var(--grey-text);
+}
+main .sidebar .add-playlist i {
+    color: var(--grey-text);
+    font-size: 2.5em;
+    vertical-align: middle;
+}
+
+
 main .main-section {
     background-color: var(--main-color);
     width: calc(100% - var(--sidebar-width));
@@ -52,10 +109,10 @@ footer {
     left: 0;
     display: flex;
     justify-content: space-between;
-    padding: 0 1.25rem;
+    padding: 0 .625rem;
 }
 footer .left, footer .right {
-    width: var(--sidebar-width);
+    width: calc(var(--sidebar-width) - .625rem)
 }
 footer .center {
     color: white;
@@ -93,7 +150,7 @@ footer .line-bar {
 }
 footer .progress {
     background-color: white;
-    width: 9%;
+    width: 33%;
     height: 4px;
     border-radius: 2px;
 }
@@ -128,4 +185,9 @@ footer .right .fa-display {
 }
 footer .right .line-bar {
     margin-right: 0;
+    width: auto;
+    flex-grow: 1;
+}
+footer .right .line-bar .progress {
+    width: 60%;
 }

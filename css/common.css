@@ -16,12 +16,12 @@
 
 :root {
     --footer-height: 6.25rem;
-    --sidebar-width: 12.5rem;
+    --sidebar-width: 16.5rem;
     --sidebar-width-small: 3.125rem
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 .container {
