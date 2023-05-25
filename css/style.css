@@ -26,6 +26,17 @@ main .header {
     left: var(--sidebar-width);
     height: var(--footer-height);
     background-color: rgba(0, 0, 0, 0.2);
+    text-align: right;
+    line-height: var(--footer-height);
+    padding: 0 1.25rem;
+}
+main .header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    border-radius: 99px;
+    padding: 1.25rem 2.5rem;
 }
 main .main-content {
     margin-top: var(--footer-height);
