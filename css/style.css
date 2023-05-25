@@ -1,1 +1,120 @@
 @import url('common.css');
+
+main {
+    height: calc(100vh - var(--footer-height));
+    margin-bottom: var(--footer-height);
+}
+main .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: var(--footer-height);
+    background-color: black;
+    width: var(--sidebar-width);
+}
+main .main-section {
+    background-color: var(--main-color);
+    width: calc(100% - var(--sidebar-width));
+    height: 100%;
+    margin-left: var(--sidebar-width);
+    overflow: auto;
+}
+main .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: var(--sidebar-width);
+    height: var(--footer-height);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+main .main-content {
+    margin-top: var(--footer-height);
+    width: 100%;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: var(--footer-height);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+}
+footer .left, footer .right {
+    width: var(--sidebar-width);
+}
+footer .center {
+    color: white;
+    padding: 0 .625rem;
+}
+footer .center .center-top {
+    font-size: 1.2em;
+    line-height: calc(var(--footer-height) / 2);
+    text-align: center;
+    position: relative;
+    top: .625rem;
+}
+footer .center .center-top .fa-circle-play {
+    font-size: 1.5em;
+    vertical-align: sub;
+    margin: 0 1.25rem;
+}
+footer .center .center-top i:first-child {
+    margin-right: .9375rem;
+}
+footer .center .center-top i:last-child {
+    margin-left: .9375rem;
+}
+footer .center .center-bottom {
+    line-height: calc(var(--footer-height) / 2);
+    display: flex;
+    align-items: center;
+}
+footer .line-bar {
+    margin: 0 1.25rem;
+    background-color: #5a5a5a;
+    width: 20vw;
+    height: 4px;
+    border-radius: 2px;
+}
+footer .progress {
+    background-color: white;
+    width: 9%;
+    height: 4px;
+    border-radius: 2px;
+}
+
+footer .left {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1.25rem 0;
+}
+footer .left img {
+    height: 100%;
+}
+footer .left .song-info {
+    padding-left: .625rem;
+    flex-grow: 1;
+}
+footer .left .song-info .song-artist {
+    color: #5a5a5a;
+}
+footer .left .song-button i:first-child {
+    margin-right: .3125rem;
+}
+
+footer .right {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+footer .right .fa-display {
+    margin: 0 1.25rem;
+}
+footer .right .line-bar {
+    margin-right: 0;
+}

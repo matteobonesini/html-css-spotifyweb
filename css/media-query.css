@@ -1,0 +1,38 @@
+/* MEDIA QUERY tablet */
+@media screen and (max-width: 1100px) {
+    
+}
+
+/* MEDIA QUERY mobile */
+@media screen and (max-width: 700px) {
+    footer .left, footer .right {
+        width: 30%;
+    }
+    footer .center .line-bar {
+        width: 15vw;
+    }
+    footer .center .center-top .fa-circle-play {
+        margin: 0 .625rem;
+    }
+    footer .center .center-top i:first-child {
+        margin-right: .4688rem;
+    }
+    footer .center .center-top i:last-child {
+        margin-left: .4688rem;
+    }
+    footer .left .song-button > * {
+        display: block;
+        margin: .625rem 0;
+    }
+    footer .right .fa-display {
+        margin: 0 .625rem;
+    }
+
+}
+
+/* MEDIA QUERY mobile small */
+@media screen and (max-width: 600px) {
+    footer .center .line-bar {
+        width: 100%;
+    }
+}
