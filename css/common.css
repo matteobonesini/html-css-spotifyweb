@@ -1,0 +1,24 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+:root {
+    --main-color: #141922;
+    --secondary-color: #282828;
+    --green-color: #adf92e;
+    --grey-text: #a3a3a3;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
