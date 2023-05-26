@@ -52,15 +52,15 @@
     main .sidebar .menu {
         margin: 0.625rem 0;
     }
-    main .sidebar .menu > h4 {
+    main .sidebar .menu > a {
         display: none;
     }
     main .sidebar .sidebar-center {
         display: none;
     }
-    main .sidebar .sidebar-bottom > .download > h6,
+    main .sidebar .sidebar-bottom > .download > a,
     main .sidebar .sidebar-bottom hr,
-    main .sidebar .sidebar-bottom > .profile > h6 {
+    main .sidebar .sidebar-bottom > .profile > a {
         display: none;
     }
     main .sidebar .sidebar-bottom > * > img {

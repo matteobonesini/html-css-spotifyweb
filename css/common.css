@@ -28,3 +28,33 @@ html {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.grey {
+    color: var(--grey-text);
+}
+
+a.none {
+    text-decoration: none;
+}
+
+.grey:hover {
+    color: white;
+}
+
+/* CUSTOM SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: var(--green-color);
+}
+  
