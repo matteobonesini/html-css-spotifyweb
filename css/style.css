@@ -121,14 +121,16 @@ main .main-section {
     height: 100%;
     margin-left: var(--sidebar-width);
     overflow: auto;
+    padding: 0 20px;
 }
 main .header {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 1;
     left: var(--sidebar-width);
     height: var(--footer-height);
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #080B12;
     text-align: right;
     line-height: var(--footer-height);
     padding: 0 1.25rem;
@@ -140,11 +142,95 @@ main .header a {
     border: 2px solid white;
     border-radius: 99px;
     padding: 1.25rem 2.5rem;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 main .main-content {
     margin-top: var(--footer-height);
     width: 100%;
 }
+main .main-content nav ul {
+    padding: 1.25rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+main .main-content nav ul li {
+    margin: 0 .625rem;
+    list-style-type: none;
+    height: 3.125rem;
+}
+main .main-content nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--grey-text);
+    font-weight: bold;
+    font-size: 0.9em;
+}
+main .main-content nav ul li a.active::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: var(--green-color);
+    margin: .3125rem auto;
+}
+main .main-content {
+    color: white;
+}
+main .main-content .create-for-jonh-doe {
+    margin: 2.5rem 0;
+}
+main .main-content .recently-played h2 {
+    margin-bottom: 1.875rem;
+}
+main .main-content .songs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.625rem;
+}
+main .main-content .songs .song {
+    width: calc((100% / 6) - 1.25rem);
+    margin: 0 .625rem;
+    text-align: center;
+}
+main .main-content .songs .song img {
+    width: 100%;
+    display: block;
+}
+main .main-content .songs .img {
+    position: relative;
+}
+main .main-content .songs .song .overlay {
+    display: none;
+}
+main .main-content .songs .song:hover .overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+main .main-content .songs .song h3 {
+    margin: .625rem 0;
+    font-size: .95em;
+}
+main .main-content .subtitle {
+    color: var(--grey-text);
+    font-size: .75em;
+}
+main .main-content .create-for-jonh-doe .subtitle,
+main .main-content .polular-artists .subtitle {
+    margin: .9375rem 0 1.25rem;
+}
+main .main-content .polular-artists .songs .song .img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 
 footer {
     background-color: var(--secondary-color);

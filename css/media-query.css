@@ -1,10 +1,16 @@
 /* MEDIA QUERY tablet */
 @media screen and (max-width: 1100px) {
-    
+    main .main-content .songs .song {
+        width: calc((100% / 4) - 1.25rem);
+    }
 }
 
 /* MEDIA QUERY mobile */
 @media screen and (max-width: 700px) {
+    main .main-content .songs .song {
+        width: calc((100% / 2) - 1.25rem);
+    }
+
     footer .left, footer .right {
         width: 30%;
     }
