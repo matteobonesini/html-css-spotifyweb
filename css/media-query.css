@@ -34,12 +34,13 @@
 @media screen and (max-width: 600px) {
     main .sidebar {
         width: var(--sidebar-width-small);
-        padding: .625rem;
+        padding: .625rem 0;
+        align-items: center;
     }
-    main .sidebar .logo {
+    main .sidebar .sidebar-top .logo {
         display: none;
     }
-    main .sidebar .logo-small {
+    main .sidebar .sidebar-top .logo-small {
         display: block;
     }
     main .sidebar .menu {
@@ -50,6 +51,20 @@
     }
     main .sidebar .sidebar-center {
         display: none;
+    }
+    main .sidebar .sidebar-bottom > .download > h6,
+    main .sidebar .sidebar-bottom hr,
+    main .sidebar .sidebar-bottom > .profile > h6 {
+        display: none;
+    }
+    main .sidebar .sidebar-bottom > * > img {
+        margin-right: 0;
+    }
+    main .sidebar .sidebar-bottom .download {
+        text-align: center;
+    }
+    main .sidebar .sidebar-bottom .download img {
+        margin-bottom: 1.875rem;
     }
 
     main .main-section {

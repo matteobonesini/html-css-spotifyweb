@@ -12,6 +12,10 @@ main .sidebar {
     background-color: black;
     width: var(--sidebar-width);
     padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 main .sidebar .logo {
     margin: 1.5625rem 5.5rem 1.5625rem 0;
@@ -67,7 +71,49 @@ main .sidebar .add-playlist i {
     font-size: 2.5em;
     vertical-align: middle;
 }
-
+main .sidebar .sidebar-center ul {
+    height: 32vh;
+    overflow-y: auto;
+}
+main .sidebar .sidebar-center ul li {
+    color: var(--grey-text);
+    list-style-type: none;
+    font-weight: bold;
+    margin: 1.5rem 0;
+}
+main .sidebar .sidebar-bottom {
+    padding-bottom: 1.25rem;
+}
+main .sidebar .sidebar-bottom hr {
+    margin: .625rem 0;
+}
+main .sidebar .sidebar-bottom > * > *{
+    line-height: 1.875rem;
+    vertical-align: middle;
+}
+main .sidebar .sidebar-bottom > * > img {
+    margin-right: .625rem;
+}
+main .sidebar .sidebar-bottom .download h6{
+    color: var(--grey-text);
+    display: inline-block;
+    font-size: 0.9em;
+}
+main .sidebar .sidebar-bottom .download img {
+    width: 1.25rem;  
+}
+main .sidebar .sidebar-bottom .profile h6{
+    color: white;
+    display: inline-block;
+    font-size: 1.05em;
+}
+main .sidebar .sidebar-bottom .profile img{
+    height: 1.875rem;
+    width: 1.875rem;
+    background-color: #808080; 
+    padding: .125rem; 
+    border-radius: 50%;
+}
 
 main .main-section {
     background-color: var(--main-color);
