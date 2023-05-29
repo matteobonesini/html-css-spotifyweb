@@ -262,7 +262,7 @@ footer .left, footer .right {
 }
 footer .center {
     color: white;
-    padding: 0 .625rem;
+    padding: 0 1.625rem;
 }
 footer .center .center-top {
     font-size: 1.2em;
@@ -328,10 +328,10 @@ footer .left {
     padding: 1.25rem 0;
 }
 footer .left img {
-    height: 100%;
+    height: calc(var(--footer-height) - 40px);
 }
 footer .left .song-info {
-    padding-left: .625rem;
+    padding: 0 .625rem;
     flex-grow: 1;
 }
 footer .left .song-info .song-title {

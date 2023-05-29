@@ -33,7 +33,9 @@
     footer .right .fa-display {
         margin: 0 .625rem;
     }
-
+    footer .center .center-bottom .time {
+        font-size: 0.9em;
+    }
 }
 
 /* MEDIA QUERY mobile small */
@@ -42,6 +44,7 @@
         width: var(--sidebar-width-small);
         padding: .625rem 0;
         align-items: center;
+        justify-content: space-between;
     }
     main .sidebar .sidebar-top .logo {
         display: none;
@@ -63,6 +66,9 @@
     main .sidebar .sidebar-bottom > .profile > a {
         display: none;
     }
+    main .sidebar .sidebar-bottom {
+        padding-bottom: 0;
+    }
     main .sidebar .sidebar-bottom > * > img {
         margin-right: 0;
     }
@@ -72,6 +78,7 @@
     main .sidebar .sidebar-bottom .download img {
         margin-bottom: 1.875rem;
     }
+    
 
     main .main-section {
         width: calc(100% - var(--sidebar-width-small));
@@ -86,5 +93,23 @@
     }
     footer .center .line-bar {
         width: 100%;
+    }
+    footer .left .song-info .song-title {
+        font-size: 0.65em;
+    }
+    footer .left .song-info .song-artist {
+        font-size: 0.55em;
+    }
+    footer .center .center-top {
+        font-size: 0.9em;
+    }
+    footer .right {
+        font-size: 0.9em;
+    }
+    footer .left .song-button {
+        font-size: 0.9em;
+    }
+    footer .center .center-bottom .time {
+        font-size: 0.7em;
     }
 }
