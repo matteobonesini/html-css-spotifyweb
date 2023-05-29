@@ -15,7 +15,13 @@ main .sidebar {
     padding-right: 1.25rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    min-height: 570px;
+}
+main .sidebar .sidebar-center {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 main .sidebar .logo {
     margin: 1.5625rem 5.5rem 1.5625rem 0;
@@ -69,7 +75,7 @@ main .sidebar .add-playlist a i {
 }
 main .sidebar .sidebar-center ul {
     margin-top: .625rem;
-    max-height: 37vh;
+    flex-grow: 1;
     overflow-y: auto;
 }
 main .sidebar .sidebar-center ul li {
@@ -126,7 +132,7 @@ main .header {
     z-index: 1;
     left: var(--sidebar-width);
     height: var(--footer-height);
-    background-color: #080B12;
+    background-color: rgba(8, 11, 18, 0.5);
     text-align: right;
     line-height: var(--footer-height);
     padding: 0 1.25rem;
